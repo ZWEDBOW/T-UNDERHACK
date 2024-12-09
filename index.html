@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThunderHack</title>
+"
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0D1117;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #0D1117;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header img {
+            max-height: 80px;
+            cursor: pointer;
+        }
+
+        header hr {
+            width: 100%;
+            border: none;
+            border-top: 2px solid #6a00ff;
+            margin-top: 10px;
+        }
+
+        header nav a {
+            margin-left: 20px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 90%;
+            max-width: 1200px;
+            margin-top: 50px;
+        }
+
+        .hero-text {
+            max-width: 50%;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: bold;
+            background: linear-gradient(to right, #a044ff, #6a00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #b1b1b1;
+            margin-top: 10px;
+        }
+
+        .hero .buttons {
+            margin-top: 20px;
+        }
+
+        .hero .buttons a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .hero .buttons .download {
+            background-color: #fff;
+            color: #0D1117;
+            border-color: #fff;
+        }
+
+        .hero .buttons .documentation {
+            background-color: transparent;
+            color: #fff;
+            border-color: #fff;
+        }
+
+        .hero .buttons .download:hover, 
+        .hero .buttons .documentation:hover {
+            background-color: #6a00ff;
+            color: #fff;
+            border-color: #6a00ff;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 80px;
+            width: 80%;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+
+        .stats .stat {
+            flex: 1 1 200px;
+            margin: 20px;
+        }
+
+        .stat h2 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        .stat p {
+            font-size: 14px;
+            color: #b1b1b1;
+            margin: 0;
+        }
+
+        .screenshot img {
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .loader {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+
+        .loader__bar {
+            width: 5px;
+            height: 20px;
+            margin: 0 2px;
+            background-color: #6a00ff;
+            animation: loader-bar 1s infinite alternate;
+        }
+
+        .loader__ball {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: #6a00ff;
+            animation: loader-ball 1s infinite alternate;
+            margin-left: 10px;
+        }
+
+        @keyframes loader-bar {
+            0% {
+                height: 20px;
+            }
+            100% {
+                height: 30px;
+            }
+        }
+
+        @keyframes loader-ball {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.5);
+            }
+        }
+
+        .reward-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #101218;
+            padding: 10px 20px;
+            border-radius: 30px;
+            border: 2px solid #6A8EF6;
+            cursor: pointer;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+            z-index: 9999;
+        }
+
+        .reward-btn:hover {
+            background-color: #6A8EF6;
+            border-color: #101218;
+        }
+
+        .reward-btn .IconContainer {
+            display: flex;
+            align-items: center;
+        }
+
+        .reward-btn .box-top,
+        .reward-btn .box-body {
+            width: 30px;
+            height: 30px;
+        }
+
+        .reward-btn .coin {
+            width: 15px;
+            height: 15px;
+            background-color: #6A8EF6;
+            border-radius: 50%;
+            margin-left: 10px;
+        }
+
+        .reward-btn .text {
+            margin-left: 10px;
+            color: #fff;
+            font-size: 16px;
+        }
+    </style>
+    <script>
+        function refreshPage() {
+            location.reload();
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="placeholder-image.png" alt="Logo or Image" onclick="refreshPage()">
+        <hr>
+        <nav>
+            <a href="https://discord.com/invite/zqxNHVz3" target="_blank" id="features" onmouseover="underlineLink('features')" onmouseout="removeUnderlineLink('features')">Features</a>
+            <a href="https://discord.com/invite/zqxNHVz3" target="_blank" id="about" onmouseover="underlineLink('about')" onmouseout="removeUnderlineLink('about')">About</a>
+            <a href="https://discord.com/invite/zqxNHVz3" target="_blank" id="contact" onmouseover="underlineLink('contact')" onmouseout="removeUnderlineLink('contact')">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div class="hero-text">
+            <h1>Unleash Your Minecraft Experience</h1>
+            <p>Discover the ultimate Minecraft utility mod that enhances your gameplay and streamlines your experience.</p>
+            <div class="buttons">
+                <!-- Updated Download Button with the 'download' attribute -->
+                <a href="ThunderHack-Release.zip" class="download" download="ThunderHack-RELEASE-1.19.2.bat">Download Now</a>
+                <a href="documentation.txt" class="documentation">Documentation</a>
+            </div>
+        </div>
+        <div class="screenshot">
+            <img src="screenshot.png" alt="ThunderHack Screenshot">
+        </div>
+    </div>
+
+    <div class="stats">
+        <div class="stat">
+            <h2>1K+</h2>
+            <p>Total Users</p>
+        </div>
+        <div class="stat">
+            <h2>124</h2>
+            <p>Active Users</p>
+        </div>
+        <div class="stat">
+            <h2>4.9/5</h2>
+            <p>User Ratings</p>
+        </div>
+    </div>
+
+    <div class="loader">
+        <div class="loader__bar"></div>
+        <div class="loader__bar"></div>
+        <div class="loader__bar"></div>
+        <div class="loader__bar"></div>
+        <div class="loader__bar"></div>
+        <div class="loader__ball"></div>
+    </div>
+
+    <button class="reward-btn">
+        <span class="IconContainer">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 60 20" class="box-top box">
+                <path stroke-linecap="round" stroke-width="4" stroke="#6A8EF6" d="M2 18L58 18"></path>
+                <circle stroke-width="5" stroke="#6A8EF6" fill="#101218" r="7" cy="9.5" cx="20.5"></circle>
+                <circle stroke-width="5" stroke="#6A8EF6" fill="#101218" r="7" cy="9.5" cx="38.5"></circle>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 58 44" class="box-body box">
+                <!-- Additional SVG content -->
+            </svg>
+        </span>
+    </button>
+</body>
+</html>

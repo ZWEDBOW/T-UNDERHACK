@@ -1,0 +1,84 @@
+ThunderHack Minecraft Mod Documentation
+1. Overview
+ThunderHack is a Minecraft modification that enhances the gameplay experience by providing new features, tweaks, and optimizations designed to help players in various ways. This mod aims to improve in-game mechanics, add new capabilities, and introduce fun and useful utilities for both casual and advanced players. With a focus on performance and versatility, ThunderHack makes the Minecraft world more dynamic.
+
+This mod is compatible with the Java Edition of Minecraft and is developed with custom features aimed at modifying the gameplay in subtle but impactful ways.
+
+2. Features
+2.1 General Features:
+Improved Performance: Optimized code to boost Minecraft's performance, especially on lower-end systems.
+World Enhancements: Tweaks to the world generation for better terrain, biomes, and structure variation.
+Additional Tools: Additions such as custom blocks, items, and even gameplay mechanics to enhance your adventure.
+2.2 Player Utility Features:
+Auto-sprint: Automatically activates sprinting when the player starts moving.
+Item Aura: Auto-collect items within a certain radius.
+Fly Mode: Enables the player to fly freely around the world without needing creative mode.
+Speed Boost: Increases player movement speed beyond the default limits.
+2.3 Combat Enhancements:
+Auto-Clicker: Automates player clicking during combat or other repetitive tasks.
+Aimbot: Helps with target precision when using ranged weapons or projectiles.
+ESP: Shows important objects and mobs through the environment (e.g., chests, mobs, ores).
+Kill Aura: Automatically attacks nearby enemies in a radius.
+2.4 World Interaction:
+Auto-Mining: Automatically mines blocks in front of the player when activated.
+Auto-Build: Allows the player to quickly build structures using a pre-set blueprint.
+X-Ray: A special feature that allows players to see through blocks, highlighting ores and valuable materials.
+3. Installation Guide
+3.1 Prerequisites:
+Minecraft Java Edition (version 1.x.x or higher)
+Minecraft Forge (latest recommended version)
+A working Java installation.
+3.2 Step-by-Step Installation:
+Download ThunderHack Mod:
+
+Obtain the ThunderHack mod file from the official website or trusted modding community.
+Install Minecraft Forge:
+
+Download and install Minecraft Forge from the official website (https://files.minecraftforge.net/).
+Make sure to select the correct version of Forge that matches your Minecraft version.
+Install the Mod:
+
+Locate your Minecraft mods folder. If it doesn't exist, create one inside your .minecraft directory.
+Place the downloaded ThunderHack mod file (usually in .jar format) into the mods folder.
+Launch Minecraft:
+
+Open the Minecraft Launcher.
+Select the Forge profile and click Play to start the game with the mod enabled.
+4. Usage Instructions
+4.1 Key Bindings:
+Auto Sprint: Automatically activates once you start moving. Can be toggled in the settings.
+Fly Mode: Press F to toggle flying.
+ESP Toggle: Use the K key to enable or disable the ESP feature.
+4.2 In-Game Settings:
+Mod Configuration: You can customize ThunderHack’s settings by accessing the mod’s settings menu via the in-game options.
+Adjust Features: Enable or disable specific features such as Aimbot, Kill Aura, and Speed Boost in the mod’s configuration settings.
+4.3 Troubleshooting:
+Performance Issues: If you notice performance drops, try adjusting the settings for world features or disabling certain enhancements like visual effects or large-radius aimbot.
+Compatibility Problems: Make sure that ThunderHack is compatible with other mods you are using. Some mods may conflict with ThunderHack’s features.
+5. Compatibility
+ThunderHack is compatible with the latest versions of Minecraft Java Edition and works best with Forge Mod Loader. It can also be used with other popular Minecraft mods, but please ensure compatibility before running them together. Incompatible mods may cause crashes or errors.
+
+6. Changelog
+Version 1.0.0 – Initial Release
+
+Added basic features such as fly mode, auto-sprint, and performance optimizations.
+Version 1.1.0 – Bug Fixes and Updates
+
+Added new combat enhancements (Auto-clicker, Kill Aura).
+Fixed bugs with the auto-mining feature.
+Version 1.2.0 – Major Update
+
+Introduced X-Ray and ESP for easier exploration.
+Improved world generation and block rendering.
+7. License & Terms of Use
+ThunderHack Mod is released under the [MIT License]. This allows users to freely download, use, and modify the mod as long as the original authors are credited. Redistribution is allowed under the same license. However, any changes or modifications should not conflict with the intended use of the mod.
+
+8. Contact & Support
+For support or any issues with the mod, please contact the developers via the official website or community forum. You can report bugs or suggest new features through the mod’s GitHub repository.
+
+9. Credits
+Developer: ThunderHack Development Team
+Special Thanks: Minecraft modding community for their continued support and contributions.
+Additional Credits: Various open-source libraries and resources used in the development of ThunderHack.
+This documentation provides an overview of the features, installation steps, and settings for using the ThunderHack mod. Should you need more details, please refer to the official resources or community forums for further guidance.
+
